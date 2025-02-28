@@ -18,7 +18,6 @@ builder.Host.ConfigureServices((hostContext, services) =>
         .AddRepositories()
         .AddServices()
         .AddAutoMapper();
-    //.AddHealthChecks();
 });
 var app = builder.Build();
 

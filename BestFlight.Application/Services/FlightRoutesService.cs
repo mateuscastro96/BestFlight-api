@@ -60,7 +60,7 @@ namespace BestFlight.Application.Services
             var bestRoute = FindCheapestRoute(allRoutes, from, to);
             return bestRoute is not null
                 ? Response<BestFlightRoutesDto>.Ok(bestRoute)
-                : Response<BestFlightRoutesDto>.Fail("Nenhuma rota encontrada.");
+                : Response<BestFlightRoutesDto>.Fail("Nenhuma rota localizada.");
         }
 
         private BestFlightRoutesDto? FindCheapestRoute(IEnumerable<FlightRoutes> routes, string from, string to)

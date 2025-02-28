@@ -8,7 +8,6 @@ namespace BestFlight.Domain.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
-        //public DateTime CreatedAt { get; set; }
         public string From { get; set; }
         public string To { get; set; }
         public decimal Price { get; set; }
