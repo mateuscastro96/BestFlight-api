@@ -45,7 +45,7 @@ namespace BestFlight.API.Controllers
             return Ok(result);
         }
 
-        [HttpGet("/good-routes/{from}/{to}")]
+        [HttpGet("/best-routes/{from}/{to}")]
         public async Task<IActionResult> GoodRoutes(string from, string to)
         {
             return Ok(await service.BestFlightRoutes(from, to));
